@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="Date.js"></script>
+</head>
+<body>
+<script>
+  const persons = [
+    {name :'Nguyen Van A',age : 18},
+    {name :'Nguyen Van A',age : 18},
+    {name :'Nguyen Van A',age : 18}
+  ]
+  localStorage.setItem('users',JSON.stringify(persons))
+  localStorage.setItem('userLogin',JSON.stringify({name :'Nguyen Van A',age : 18}))
+  let date = new Date(2,2,2007);
+  let day = date.getDay();
+  let month = date.getMonth();
+  let year = date.getYear();
+  alert(day + month + year)
+  date.setDay(10)
+  date.setMonth(10)
+  date.setYear(2019)
+  alert(day + month + year)
+  console.log(date)
+</script>
+</body>
+</html>
+</body>
+</html>
